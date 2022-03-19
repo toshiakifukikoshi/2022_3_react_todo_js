@@ -3,25 +3,26 @@
   <head>
     <title>TODO JS</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
 
   <body>
-    <div>
+    <div class="input-area">
       <input placeholder="TODOを入力" />
       <button>追加</button>
     </div>
-    <div>
-      <p>未完了のTODO</p>
-      <ul>
+    <div class="incomplete-area">
+      <p class="title">未完了のTODO</p>
+      <ul class="list-row">
         <!-- 　　　ここにdiv入れてるがアンチパターンなので削除 -->
         <li>TODOです</li>
         <button>完了</button>
         <button>削除</button>
       </ul>
     </div>
-    <div>
-      <p>完了したTODO</p>
-      <ul>
+    <div class="complete-area">
+      <p class="title">完了したTODO</p>
+      <ul class="list-row">
         <!-- ここにdiv入れてるがアンチパターン何で削除 -->
         <li>TODOでした</li>
         <button>戻す</button>
